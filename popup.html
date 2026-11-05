@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --bg:#16181d; --card:#1f2229; --fg:#e8e8ea; --muted:#9aa0aa; --on:#7c4dff; --off:#3a3d45; }
+  body { margin:0; width:280px; background:var(--bg); color:var(--fg); font:14px/1.5 system-ui, "Segoe UI", sans-serif; }
+  .wrap { padding:16px; }
+  h1 { font-size:15px; margin:0 0 4px; }
+  p { margin:0 0 14px; color:var(--muted); font-size:12px; }
+  .row { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 12px; background:var(--card); border-radius:10px; margin-bottom:10px; }
+  .col { display:block; }
+  .switch { position:relative; width:46px; height:26px; flex:none; }
+  .switch input { opacity:0; width:0; height:0; }
+  .slider { position:absolute; inset:0; background:var(--off); border-radius:26px; cursor:pointer; }
+  .ready .slider, .ready .slider::before { transition:.2s; }
+  .slider::before { content:""; position:absolute; width:20px; height:20px; top:3px; left:3px; background:#fff; border-radius:50%; }
+  input:checked + .slider { background:var(--on); }
+  input:checked + .slider::before { transform:translateX(20px); }
+  .status { font-weight:600; }
+  .head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+  .head b { font-weight:600; }
+  #sizeVal { color:var(--muted); font-variant-numeric:tabular-nums; }
+  input[type=range] { width:100%; accent-color:var(--on); margin:0; }
+  .actions { display:flex; justify-content:space-between; align-items:center; margin-top:6px; font-size:11px; color:var(--muted); }
+  button { background:none; border:1px solid var(--off); color:var(--fg); border-radius:6px; padding:2px 8px; font:inherit; cursor:pointer; }
+  button:hover { border-color:var(--on); }
+  .disabled { opacity:.45; pointer-events:none; }
+  .hint { font-size:11px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Translatable Cards for Simkl</h1>
+  <p>Makes card descriptions and genres translatable by Chrome's built-in page translation.</p>
+
+  <div class="row">
+    <span class="status" id="status">…</span>
+    <label class="switch"><input type="checkbox" id="toggle"><span class="slider"></span></label>
+  </div>
+
+  <div class="row col" id="sizeBox">
+    <div class="head"><b>Description size</b><span id="sizeVal">100%</span></div>
+    <input type="range" id="size" min="80" max="200" step="5" value="100">
+    <div class="actions"><span>Simkl default = 100%</span><button id="reset">Reset</button></div>
+  </div>
+
+  <div class="hint">Changes apply instantly to open Simkl tabs.</div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

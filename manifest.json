@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Translatable Cards for Simkl",
+  "description": "Lets Chrome's built-in translator translate the descriptions and genres on Simkl's Card view. Unofficial, not affiliated with Simkl.",
+  "version": "1.5.0",
+  "homepage_url": "https://github.com/abdallah28r/translatable-cards-for-simkl",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Translatable Cards for Simkl",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://simkl.com/*",
+        "https://*.simkl.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
