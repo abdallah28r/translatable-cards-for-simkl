@@ -8,7 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 First public release.
 
 ### Features
-- Card descriptions and genres on Simkl can be translated by Chrome's built-in "Translate this page".
+- Card descriptions and genres on Simkl can be translated by any page translator: the browser's built-in "Translate" or translation extensions.
 - Automatic right-to-left layout when translated into Arabic, Hebrew, Persian, Urdu, and other RTL languages. "Show original" switches it back.
 - Cards keep Simkl's own look: the extension copies Simkl's style rules, including screen-size rules.
 - Description size setting (80%–200%) with a Reset button.

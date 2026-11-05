@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Translatable Cards for Simkl",
-  "description": "Lets Chrome's built-in translator translate the descriptions and genres on Simkl's Card view. Unofficial, not affiliated with Simkl.",
+  "description": "Makes Simkl card descriptions and genres translatable by any page translator. Unofficial, not affiliated with Simkl.",
   "version": "1.5.0",
   "homepage_url": "https://github.com/abdallah28r/translatable-cards-for-simkl",
   "permissions": [

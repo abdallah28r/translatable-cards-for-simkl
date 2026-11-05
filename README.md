@@ -1,12 +1,12 @@
 # Translatable Cards for Simkl
 
-A small Chrome extension that lets **Chrome's built-in "Translate"** translate the **descriptions and genres** on [Simkl](https://simkl.com)'s Card view.
+A small Chrome extension that makes the **descriptions and genres** on [Simkl](https://simkl.com)'s Card view translatable by **any page translator**: your browser's built-in "Translate" or a translation extension.
 
 > **Unofficial.** This project is not made, endorsed, or supported by Simkl. "Simkl" is a trademark of its owner.
 
 ## Why?
 
-Simkl draws the description and genres on its cards with CSS. Page translators (like Chrome's "Translate this page") can't see CSS text, so those parts stay in English while the rest of the page is translated.
+Simkl draws the description and genres on its cards with CSS. Page translators (the browser's "Translate this page" or translation extensions) can't see CSS text, so those parts stay in English while the rest of the page is translated.
 
 This extension copies that text into normal page text, so it gets translated like everything else.
 
@@ -27,7 +27,7 @@ The extension is not on the Chrome Web Store yet. You can install it in about a 
 3. Open Chrome and go to **`chrome://extensions`**.
 4. Turn on **Developer mode** (top-right corner).
 5. Click **Load unpacked** and select the unzipped folder (the one that contains `manifest.json`).
-6. Open or reload [simkl.com](https://simkl.com), switch a list to **Card view**, then right-click the page and choose **Translate to …**.
+6. Open or reload [simkl.com](https://simkl.com), switch a list to **Card view**, then translate the page: right-click and choose **Translate to …**, or use your translation extension.
 
 Works in Chrome and other Chromium browsers (Edge, Brave, Opera, Vivaldi). In Edge, go to `edge://extensions` instead.
 
@@ -58,7 +58,7 @@ Click the extension icon in the toolbar:
 - Runs only on `simkl.com`.
 - Makes **no extra requests** to Simkl's servers. It only works with what the page has already loaded.
 
-Translation itself is done by your browser's translator (Google Translate in Chrome), under that browser's own privacy policy. This extension doesn't send anything to it.
+Translation itself is done by the translator you choose (your browser's built-in one or a translation extension), under that tool's own privacy policy. This extension doesn't send anything to it.
 
 ## How it works (for developers)
 
