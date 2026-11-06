@@ -2,7 +2,9 @@
 
 A small Chrome extension that makes the **descriptions and genres** on [Simkl](https://simkl.com)'s Card view translatable by **any page translator**: your browser's built-in "Translate" or a translation extension.
 
-> **Unofficial.** This project is not made, endorsed, or supported by Simkl. "Simkl" is a trademark of its owner.
+## Demo
+
+https://github.com/user-attachments/assets/c0c728ea-4ff9-4939-b183-691fd3c38122
 
 ## Why?
 
@@ -94,3 +96,5 @@ Bug reports and pull requests are welcome. Please keep the extension free of tra
 [MIT](LICENSE) © abdallah28r
 
 This project was written with help from AI tools and reviewed by the author.
+
+> **Unofficial.** This project is not made, endorsed, or supported by Simkl. "Simkl" is a trademark of its owner.
